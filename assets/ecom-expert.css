@@ -71,6 +71,12 @@ body{
 .m-0{
   margin: 0;
 }
+.btn{
+  line-height: 44px;
+  padding: 0 40px 0px 40px;
+  text-decoration: none;
+  text-align:center;
+}
 
 /****** Responsive css ******/
 /* Small devices (mobiles, 576px and up) */
