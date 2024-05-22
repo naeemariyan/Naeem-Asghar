@@ -72,10 +72,34 @@ body{
   margin: 0;
 }
 .btn{
-  line-height: 44px;
-  padding: 0 40px 0px 40px;
-  text-decoration: none;
-  text-align:center;
+    line-height: 44px;
+    padding: 0 40px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-image: url('long-arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: auto 24px;
+    background-position-x: right;
+}
+
+.btn-yellow{
+  background: #FFF544;
+    color: #000;
+}
+.btn-yellow{
+  background: #000;
+    color: #fff;
+}
+.btn-gray{
+  background: #F5F5F5;
+    color: #000;
+}
+.btn-white{
+  background: #fff;
+    color: #000;
 }
 
 /****** Responsive css ******/
