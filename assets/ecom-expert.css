@@ -87,7 +87,7 @@ body{
 }
 .btn:hover{
   background-position: calc(100% - 10px) center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .btn-yellow{
