@@ -1,10 +1,10 @@
 {% if block != blank %}
   <div class="text-baner-wrappper">
     <div class="flex-row">
-      <div class="col-lg-6 col">
+      <div class="col-lg-5 col">
         g
       </div>
-      <div class="col-lg-6 col">
+      <div class="col-lg-7 col">
         {% if block.settings.image !=blank %}
           <picture class="d-block">
             <source media="(min-width:667px)" srcset="{{ block.settings.image | img_url: "master" }}">
