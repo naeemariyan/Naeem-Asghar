@@ -1,17 +1,18 @@
 {% if block != blank %}
-  <div class="baner-wrappper">
-    <div class="{% if block.settings.btn_style == "box-image" %}container{% elsif block.settings.btn_style == "full-image-with-padding" %}px{% endif %}">
-      {% if block.settings.btn_url !=blank %}
-        <a href="block.settings.btn_url" class="d-block">
+  <div class="text-baner-wrappper">
+    <div class="flex-row">
+      <div class="col-lg-6 col">
+        g
+      </div>
+      <div class="col-lg-6 col">
+        {% if block.settings.image !=blank %}
           <picture class="d-block">
             <source media="(min-width:667px)" srcset="{{ block.settings.image | img_url: "master" }}">
             <source media="(min-width:220px)" srcset="{% if block.settings.mobile_image != blank %}{{ block.settings.mobile_image | img_url: "master" }}{% else %}{{ block.settings.image | img_url: "master" }}{% endif %}">
             <img width="100%" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="Banner" />
           </picture>
-        </a>
-      {% else %}
-        <img width="100%" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="Banner" />
       {% endif %}
+      </div>
     </div>
   </div>
 {% endif %}
