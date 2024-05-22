@@ -12,7 +12,8 @@
             "btn_url": "",
             "btn_style": "btn-yellow",
             "bg_color": "#f5f5f5",
-            "text_color": ""
+            "text_color": "",
+            "accordion": true
           }
         },
         "large_image_tHNfGf": {
@@ -34,15 +35,28 @@
             "btn_url": "",
             "btn_style": "btn-black",
             "img_align": "img-right",
-            "bg_color": "#fff",
+            "bg_color": "#ffffff",
             "text_color": ""
+          }
+        },
+        "announcement_block_bK4QQx": {
+          "type": "announcement_block",
+          "settings": {
+            "title": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+            "btn_text": "",
+            "btn_url": "",
+            "btn_style": "btn-black",
+            "bg_color": "#f5f5f5",
+            "text_color": "",
+            "accordion": false
           }
         }
       },
       "block_order": [
         "announcement_block_KHL767",
         "large_image_tHNfGf",
-        "text_with_image_F4abWz"
+        "text_with_image_F4abWz",
+        "announcement_block_bK4QQx"
       ],
       "settings": {
       }
