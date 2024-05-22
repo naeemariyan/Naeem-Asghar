@@ -250,8 +250,11 @@
         }
       }
     {% endstyle %}
-
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% if page.handle == 'ecom-expert' %}
+      {{ 'ecom-expert.css' | asset_url | stylesheet_tag }}
+    {% else %}
+      {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% endif %}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
