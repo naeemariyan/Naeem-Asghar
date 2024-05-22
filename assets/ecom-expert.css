@@ -84,6 +84,12 @@ body{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .m-md-0{
+    margin: 0;
+  }
+  .p-md-0{
+    padding: 0;
+  }
   .col-md-12 {
     width: 100%;
   }
