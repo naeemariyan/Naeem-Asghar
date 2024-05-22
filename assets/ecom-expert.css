@@ -42,7 +42,10 @@ body{
 .text-right{
   text-align: right;
 }
-
+.col{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /****** Responsive css ******/
 /* Small devices (mobiles, 576px and up) */
