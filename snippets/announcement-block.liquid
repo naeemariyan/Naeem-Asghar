@@ -15,9 +15,18 @@
   <div class="section-wrapper announcement-section section-wrapper-{{ block.id }}">
     <div class="container">
       <div class="flex-row justify-content-between align-items-center">
-        <div class="col-lg-3 col col-md-12">
+        <div class="col-lg-3 col-xs-12 col">
           <div class="flex-row d-md-block m-lg-0">
-            <div class="col-xs-3 col-lg-hidden"></div>
+            <div class="col-xs-3 col-lg-hidden">
+              <button type="button">
+                <span class="icon">
+                  {% render "icon-hamburger" %}
+                </span>
+                <span class="icon">
+                  {% render "icon-close" %}
+                </span>
+              </button>
+            </div>
             <div class="col-xs-6 p-lg-0">
               <a href="javascript:void(0)" class="d-block">
                 <img width="152" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="{{ block.settings.title | escape }}" />
@@ -25,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9 col col-md-12">
+        <div class="col-lg-9 col-xs-12 col">
           <div class="flex-row">
             <div class="col col-lg-8 col-xs-12 text-center">
               <p class="fs-5 m-0">{{ block.settings.title }}</p>
