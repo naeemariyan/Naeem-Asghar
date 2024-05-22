@@ -2,11 +2,11 @@
   <section class="sectoin-wrapper section--{{ section.id }}">
     {% for block in section.blocks %}
       {% if block.type == "text_with_image" %}
-        {% render "text-with-image-block" %}
+        {% render "text-with-image-block", block: block %}
       {% elsif block.type == "announcement_block" %}
-        {% render "announcement-block" %}
+        {% render "announcement-block", block: block %}
       {% elsif block.type == "large_image" %}
-        {% render "large-image-block" %}
+        {% render "large-image-block", block: block %}
       {% endif %}
     {% endfor %}
   </section>
