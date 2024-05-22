@@ -10,7 +10,11 @@
           </picture>
         </a>
       {% else %}
-        <img width="100%" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="Banner" />
+        <picture class="d-block">
+            <source media="(min-width:667px)" srcset="{{ block.settings.image | img_url: "master" }}">
+            <source media="(min-width:220px)" srcset="{% if block.settings.mobile_image != blank %}{{ block.settings.mobile_image | img_url: "master" }}{% else %}{{ block.settings.image | img_url: "master" }}{% endif %}">
+            <img width="100%" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="Banner" />
+          </picture>
       {% endif %}
     </div>
   </div>
