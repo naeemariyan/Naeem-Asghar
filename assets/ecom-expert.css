@@ -86,19 +86,19 @@ body{
 }
 
 .btn-yellow{
-  background: #FFF544;
+  background-color: #FFF544;
     color: #000;
 }
 .btn-black{
-  background: #000;
+  background-color: #000;
     color: #fff;
 }
 .btn-gray{
-  background: #F5F5F5;
+  background-color: #F5F5F5;
     color: #000;
 }
 .btn-white{
-  background: #fff;
+  background-color: #fff;
     color: #000;
 }
 
