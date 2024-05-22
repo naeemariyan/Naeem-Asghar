@@ -15,6 +15,7 @@
   <div class="section-wrapper announcement-section{% if block.settings.accordion %} announcement-accordion-section {% endif %}section-wrapper-{{ block.id }}">
     <div class="container">
       <div class="flex-row justify-content-between align-items-center">
+        {% if block.settings.image != blank or block.settings.accordion == true %}
         <div class="col-lg-3 col-xs-12 col{% if block.settings.accordion %} announcement-accordion-header {% endif %}">
           <div class="flex-row d-md-block m-lg-0">
             {% if block.settings.accordion %}
@@ -29,21 +30,28 @@
               </button>
             </div>
             {% endif %}
+            {% if block.settings.image != blank %}
             <div class="col-xs-6 col p-lg-0 text-center text-lg-left">
               <a href="javascript:void(0)" class="d-inline">
                 <img width="152" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="{{ block.settings.title | escape }}" />
               </a>
             </div>
+            {% endif %}
           </div>
         </div>
-        <div class="col-lg-9 col-xs-12 col {% if block.settings.accordion %} announcement-accordion-body {% endif %}">
+        {% endif %}
+        <div class="{% if block.settings.image != blank or block.settings.accordion == true %}col-lg-9 col-xs-12 col{% else %}col-xs-12 col{% endif %} {% if block.settings.accordion %} announcement-accordion-body {% endif %}">
           <div class="flex-row align-items-center">
-            <div class="col col-lg-8 col-xs-12 text-center">
+            {% if block.settings.title != blank %}
+            <div class="col {% if block.settings.btn_text != blank %}col-lg-8{% endif %} col-xs-12 text-center">
               <p class="fs-5 m-lg-0">{{ block.settings.title }}</p>
             </div>
-            <div class="col col-lg-4 col-xs-12 text-center text-lg-right">
+            {% endif %}
+            {% if block.settings.btn_text != blank %}
+            <div class="col {% if block.settings.title != blank %}col-lg-4{% endif %} col-xs-12 text-center text-lg-right">
               <a class="btn {{ block.settings.btn_style }}" href="block.settings.btn_url">{{ block.settings.btn_text }}</a>
             </div>
+            {% endif %}
           </div>
         </div>
       </div>
