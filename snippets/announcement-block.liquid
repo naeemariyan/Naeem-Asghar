@@ -44,7 +44,7 @@
           <div class="flex-row align-items-center">
             {% if block.settings.title != blank %}
             <div class="col {% if block.settings.btn_text != blank %}col-lg-8{% endif %} col-xs-12 text-center">
-              <p class="fs-5 m-lg-0">{{ block.settings.title }}</p>
+              <p class="fs-5 {% if block.settings.btn_text != blank %}m-lg-0{% else %}m-0{% endif %}">{{ block.settings.title }}</p>
             </div>
             {% endif %}
             {% if block.settings.btn_text != blank %}
