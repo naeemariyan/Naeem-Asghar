@@ -1,14 +1,12 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "ecom-expert-banner": {
+      "type": "ecom-expert-banner",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "main"
+    "ecom-expert-banner"
   ]
 }
