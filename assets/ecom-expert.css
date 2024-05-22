@@ -84,6 +84,9 @@ body{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .col-md-hidden{
+    display: none;
+  }
   .m-md-0{
     margin: 0;
   }
