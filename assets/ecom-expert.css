@@ -307,14 +307,6 @@ body{
     width: 25%;
   }
 
-  .announcement-accordion-section{
-      padding-top: 0px !important;
-  }
-  .announcement-accordion-section .announcement-accordion-header{
-    box-shadow: 0px 2px 4px 0px #00000026;
-    padding-top: 23px;
-    padding-bottom: 23px;
-  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -369,7 +361,16 @@ body{
 @media (max-width: 767.98px) {  }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {  }
+@media (max-width: 991.98px) {
+  .announcement-accordion-section{
+      padding-top: 0px !important;
+  }
+  .announcement-accordion-section .announcement-accordion-header{
+    box-shadow: 0px 2px 4px 0px #00000026;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {  }
