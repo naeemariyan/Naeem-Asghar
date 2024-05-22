@@ -370,6 +370,10 @@ body{
     padding-top: 23px;
     padding-bottom: 23px;
   }
+  .announcement-accordion-section .announcement-accordion-body{
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
