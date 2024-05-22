@@ -1,6 +1,244 @@
+{% if section.blocks.size > 0 %}
+  <section class="sectoin-wrapper section--{{ section.id }}">
+    {% for block in section.blocks %}
+      {% if block.type == "text_with_image" %}
+        {% render "text-with-image-block" %}
+      {% elsif block.type == "announcement_block" %}
+        {% render "announcement-block" %}
+      {% elsif block.type == "large_image" %}
+        {% render "large-image-block" %}
+      {% endif %}
+    {% endfor %}
+  </section>
+{% endif %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Econ expert banner",
+    "tag": "section",
+    "class": "ecom-expert-banner",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Ecom banner with 3 blocks"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "announcement_block",
+        "name": "Announcement bar",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text"
+          },
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button url"
+          },
+          {
+            "type": "header",
+            "content": "Style"
+          },
+          {
+            "type": "select",
+            "id": "btn_style",
+            "label": "Button Style",
+            "default": "btn-black",
+            "options": [
+              {
+                "label": "Black",
+                "value": "btn-black"
+              },
+              {
+                "label": "Yellow",
+                "value": "btn-yellow"
+              },
+              {
+                "label": "Gray",
+                "value": "btn-gray"
+              },
+              {
+                "label": "White",
+                "value": "btn-white"
+              }
+            ]
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color"
+          }
+        ]
+      },
+      {
+        "type": "text_with_image",
+        "name": "Text with image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text"
+          },
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button url"
+          },
+          {
+            "type": "header",
+            "content": "Style"
+          },
+          {
+            "type": "select",
+            "id": "btn_style",
+            "label": "Button Style",
+            "default": "btn-black",
+            "options": [
+              {
+                "label": "Black",
+                "value": "btn-black"
+              },
+              {
+                "label": "Yellow",
+                "value": "btn-yellow"
+              },
+              {
+                "label": "Gray",
+                "value": "btn-gray"
+              },
+              {
+                "label": "White",
+                "value": "btn-white"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "img_align",
+            "label": "Image align",
+            "default": "img-right",
+            "options": [
+              {
+                "label": "Right",
+                "value": "img-right"
+              },
+              {
+                "label": "left",
+                "value": "img-left"
+              }
+            ]
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color"
+          }
+        ]
+      },
+      {
+        "type": "large_image",
+        "name": "Large image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+          },
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "URL"
+          },
+          {
+            "type": "header",
+            "content": "Style"
+          },
+          {
+            "type": "select",
+            "id": "btn_style",
+            "label": "Button Style",
+            "default": "box-image",
+            "options": [
+              {
+                "label": "Box",
+                "value": "box-image"
+              },
+              {
+                "label": "Full width",
+                "value": "full-image"
+              },
+              {
+                "label": "Full width with padding",
+                "value": "full-image-with-padding"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Econ expert banner",
+        "blocks": [
+          {
+            "type": "announcement_block"
+          },
+          {
+            "type": "text_with_image"
+          },
+          {
+            "type": "large_image"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
