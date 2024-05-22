@@ -86,7 +86,7 @@ body{
     transition: all 0.5s;
 }
 .btn:hover{
-  background-position: calc(100% - 10px) center;
+  background-position: calc(100% - 15px) center;
   opacity: 0.9;
 }
 
@@ -108,6 +108,41 @@ body{
 }
 
 /****** Responsive css ******/
+
+/* Small devices (mobiles, 220px and up) */
+@media (min-width: 220px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  .col-xs-6{
+    width: 50%;
+  }
+  .col-xs-5{
+    width: 41.66666667%;
+  }
+  .col-xs-4{
+    width: 33.333%;
+  }
+  .col-xs-3{
+    width: 25%;
+  }
+}
+
 /* Small devices (mobiles, 576px and up) */
 @media (min-width: 576px) {
   .col-sm-12 {
