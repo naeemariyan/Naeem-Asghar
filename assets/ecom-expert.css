@@ -339,4 +339,14 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.announcement-section .burger-icon svg,
+.announcement-section .burger-icon{
+  width: 18px;
+  height: 10px;
+}
+.announcement-section .close-icon svg,
+.announcement-section .close-icon{
+  width: 12px;
+  height: 13px;
+}
 
