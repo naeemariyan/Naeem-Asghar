@@ -53,6 +53,22 @@ body{
   display: inline-block;
 }
 
+.fs-6{
+  font-size: 14px;
+}
+.fs-5{
+  font-size: 16px;
+}
+.fs-4{
+  font-size: 18px;
+}
+.fs-3{
+  font-size: 20px;
+}
+.small{
+  font-size: 12px;
+}
+
 /****** Responsive css ******/
 /* Small devices (mobiles, 576px and up) */
 @media (min-width: 576px) {
