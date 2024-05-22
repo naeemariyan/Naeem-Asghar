@@ -106,7 +106,10 @@ body{
   background-color: #fff;
     color: #000;
 }
-
+.px{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 /****** Responsive css ******/
 
 /* Small devices (mobiles, 220px and up) */
