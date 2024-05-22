@@ -73,16 +73,21 @@ body{
 }
 .btn{
     line-height: 44px;
-    padding: 0 40px;
+    padding: 0 60px 0px 40px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
-    background-image: url('long-arrow-right.svg');
+    background-image: url(long-arrow-right.svg);
     background-repeat: no-repeat;
-    background-size: auto 24px;
-    background-position-x: right;
+    background-size: 24px auto;
+    background-position: calc(100% - 22px) center;
+    transition: all 0.5s;
+}
+.btn:hover{
+  background-position: calc(100% - 10px) center;
+  opacity: 0.8;
 }
 
 .btn-yellow{
