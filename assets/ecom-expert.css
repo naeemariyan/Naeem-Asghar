@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'jost';
+    font-family: 'jostregular';
     src: url('jost-400-book-webfont.woff2') format('woff2'),
          url('jost-400-book-webfont.woff') format('woff');
     font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'jost';
+    font-family: 'jostmedium';
     src: url('jost-500-medium-webfont.woff2') format('woff2'),
          url('jost-500-medium-webfont.woff') format('woff');
     font-weight: normal;
@@ -17,8 +17,7 @@
 body{
   font-size: 14px;
   color:#000;
-  font-family: 'jost';
-  font-weight: 400;
+  font-family: 'jostregular';
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -127,6 +126,7 @@ font-weight: 400;
 }
 .fw-medium{
   font-weight: 500;
+  font-family: 'jostmedium';
 }
 /****** Responsive css ******/
 
