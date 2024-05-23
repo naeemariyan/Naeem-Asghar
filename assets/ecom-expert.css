@@ -491,6 +491,10 @@ width: 100%;
   font-size: 36px;
   font-family: 'lustriaregular';
 }
+.sectoin-spacing-top{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 
 
