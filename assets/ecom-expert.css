@@ -226,6 +226,7 @@ font-weight: 400;
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  
   .text-lg-left{
     text-md-ign: left;
   }
@@ -273,6 +274,10 @@ font-weight: 400;
   }
   .col-md-3{
     width: 25%;
+  }
+
+  .text-baner-wrappper{
+  font-size: 70px;
   }
 }
 
