@@ -8,6 +8,9 @@
           <a href="{{ product.url }}" class="d-block">
             <div class="product-image d-block w-100" style="background: url({{ product.featured_image.src | product_img_url: "600x" }})"></div>
           </a>
+          <button type="button">
+            <img src="{{ "icon-plus.svg" | asset_img_url }}" alt="+" />
+          </button>
         </div>
     {% endfor %}
     </div>
