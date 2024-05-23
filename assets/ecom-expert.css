@@ -77,7 +77,10 @@ body{
   font-size: 24px;
 }
 .fs-1{
-  font-size: 40px;
+  font-size: 30px;
+}
+.fs-extra-1{
+  font-size: 50px;
 }
 .small{
   font-size: 12px;
