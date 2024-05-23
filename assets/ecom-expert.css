@@ -124,8 +124,7 @@ padding:0;
 .fw-normal{
 font-weight: 400;
 }
-.fw-medium{
-  font-weight: 500;
+.jost-fw-medium{
   font-family: 'jostmedium';
 }
 /****** Responsive css ******/
