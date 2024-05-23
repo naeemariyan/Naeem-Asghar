@@ -72,37 +72,49 @@
         "products_block_bELVd8": {
           "type": "products_block",
           "settings": {
-            "product": "orange-wide-leg"
+            "product": "orange-wide-leg",
+            "top": 52,
+            "left": 57
           }
         },
         "products_block_qDRicw": {
           "type": "products_block",
           "settings": {
-            "product": "tailored-jacket"
+            "product": "tailored-jacket",
+            "top": 51,
+            "left": 82
           }
         },
         "products_block_aNcjng": {
           "type": "products_block",
           "settings": {
-            "product": "accordion-pleated-dress"
+            "product": "accordion-pleated-dress",
+            "top": 22,
+            "left": 62
           }
         },
         "products_block_L9r9Ae": {
           "type": "products_block",
           "settings": {
-            "product": "green-trench-coat"
+            "product": "green-trench-coat",
+            "top": 17,
+            "left": 69
           }
         },
         "products_block_TcGTYk": {
           "type": "products_block",
           "settings": {
-            "product": "tennis-blue-t-shirt"
+            "product": "tennis-blue-t-shirt",
+            "top": 23,
+            "left": 46
           }
         },
         "products_block_j6R3QH": {
           "type": "products_block",
           "settings": {
-            "product": "long-sleeve-tennis-top"
+            "product": "long-sleeve-tennis-top",
+            "top": 36,
+            "left": 76
           }
         }
       },
@@ -115,7 +127,8 @@
         "products_block_j6R3QH"
       ],
       "settings": {
-        "title": "Tisso vison in the wild"
+        "title": "Tisso vison in the wild",
+        "lightbox": true
       }
     }
   },
