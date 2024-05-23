@@ -13,15 +13,18 @@
             "btn_style": "btn-yellow",
             "bg_color": "#f5f5f5",
             "text_color": "",
-            "accordion": true
+            "accordion": true,
+            "visiblity_control": "show-image"
           }
         },
         "large_image_tHNfGf": {
           "type": "large_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_2.png",
             "btn_url": "",
-            "btn_style": "full-image"
+            "btn_style": "full-image",
+            "visiblity_control": "show-image"
           }
         },
         "text_with_image_F4abWz": {
@@ -36,7 +39,8 @@
             "btn_style": "btn-black",
             "img_align": "img-right",
             "bg_color": "#ffffff",
-            "text_color": ""
+            "text_color": "",
+            "visiblity_control": "mobile-hidden"
           }
         },
         "announcement_block_bK4QQx": {
@@ -48,7 +52,8 @@
             "btn_style": "btn-black",
             "bg_color": "#f5f5f5",
             "text_color": "",
-            "accordion": false
+            "accordion": false,
+            "visiblity_control": "show-image"
           }
         }
       },
