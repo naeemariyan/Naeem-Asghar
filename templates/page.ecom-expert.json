@@ -60,9 +60,62 @@
       ],
       "settings": {
       }
+    },
+    "ecom_product_grids_hqQ4VA": {
+      "type": "ecom-product-grids",
+      "blocks": {
+        "products_block_bELVd8": {
+          "type": "products_block",
+          "settings": {
+            "product": "orange-wide-leg"
+          }
+        },
+        "products_block_qDRicw": {
+          "type": "products_block",
+          "settings": {
+            "product": "tailored-jacket"
+          }
+        },
+        "products_block_aNcjng": {
+          "type": "products_block",
+          "settings": {
+            "product": "accordion-pleated-dress"
+          }
+        },
+        "products_block_L9r9Ae": {
+          "type": "products_block",
+          "settings": {
+            "product": "green-trench-coat"
+          }
+        },
+        "products_block_TcGTYk": {
+          "type": "products_block",
+          "settings": {
+            "product": "tennis-blue-t-shirt"
+          }
+        },
+        "products_block_j6R3QH": {
+          "type": "products_block",
+          "settings": {
+            "product": "long-sleeve-tennis-top"
+          }
+        }
+      },
+      "block_order": [
+        "products_block_bELVd8",
+        "products_block_qDRicw",
+        "products_block_aNcjng",
+        "products_block_L9r9Ae",
+        "products_block_TcGTYk",
+        "products_block_j6R3QH"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
-    "ecom-expert-banner"
+    "ecom-expert-banner",
+    "ecom_product_grids_hqQ4VA"
   ]
 }
