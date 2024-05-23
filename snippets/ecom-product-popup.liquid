@@ -1,0 +1,17 @@
+<div class="lightbox" id="lightbox-{{ product.id }}">
+  <div class="lightbox-inner">
+    <div class="lightbox-container">
+      <div class="lightbox-body px">
+        <div class="flex-row">
+          <div class="lightbox-image col col-xs-5">
+            <img src="{{ product.featured_image.src | product_img_url: "300x" }}" alt="{{ product.title | escape }}" width="100%" height="auto"/>
+          </div>
+          <div class="lightbox-image col col-xs-7">
+            <h4>{{ product.title }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox-overlay"></div>
+</div>
