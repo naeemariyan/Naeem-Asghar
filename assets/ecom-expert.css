@@ -483,6 +483,7 @@ width: 100%;
 .product-grids .product-grid .product-popup-icon{
   position: absolute;
   z-index: 1;
+  cursor: pointer;
 }
 .position-relative{
   position: relative;
