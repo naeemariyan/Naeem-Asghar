@@ -4,7 +4,7 @@
     <div class="flex-row product-grids">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
-        <div class="col col-md-4 col-xs-6 .product-grid">
+        <div class="col col-md-4 col-xs-6 product-grid">
           <a href="{{ product.url }}" class="d-block">
             <div class="product-image d-block w-100" style="background: url({{ product.featured_image.src | product_img_url: "600x" }})"></div>
           </a>
