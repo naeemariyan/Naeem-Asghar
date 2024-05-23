@@ -442,3 +442,20 @@ font-weight: 400;
 .hidden{
   display:none;
 }
+.product-grids .product-image{
+  padding: 100%;
+  background-size: cover;
+  background-position: top center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
