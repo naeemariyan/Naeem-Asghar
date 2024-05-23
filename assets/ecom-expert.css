@@ -285,11 +285,12 @@ font-weight: 400;
   .col-md-3{
     width: 25%;
   }
-
+  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  
   .text-lg-left{
     text-align: left;
   }
@@ -338,7 +339,9 @@ font-weight: 400;
   .col-lg-3{
     width: 25%;
   }
-
+  .desktop-hidden{
+    display: none;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -415,6 +418,9 @@ font-weight: 400;
   .announcement-accordion-section .announcement-accordion-body{
     padding-top: 23px;
     padding-bottom: 23px;
+  }
+  .mobile-hidden{
+    display: none;
   }
 }
 
