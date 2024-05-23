@@ -16,11 +16,15 @@
             <img src="{{ "icon-plus.svg" | asset_url }}" width="auto" height="auto" alt="+" />
           </button>
         </div>
+          {% render "ecom-product-popup", product: product %}
       </div>
     {% endfor %}
     </div>
     </div>
   </section>
+
+  
+  
 {% endif %}
 
 {% schema %}
