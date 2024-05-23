@@ -7,7 +7,7 @@
             <h2 class="title jost-fw-medium fs-extra-1">{{ block.settings.title }}</h2>  
           {% endif %}
           {% if block.settings.text !=blank %}
-            {{ block.settings.text }}
+            ><div class="text fs-3">{{ block.settings.text }}</div>
           {% endif %}
           {% if block.settings.btn_text !=blank %}
             <a class="btn {{ block.settings.btn_style }}" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
