@@ -13,6 +13,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'lustriaregular';
+    src: url('lustria-regular-webfont.woff2') format('woff2'),
+         url('lustria-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
   font-size: 14px;
@@ -480,7 +487,10 @@ width: 100%;
 .position-relative{
   position: relative;
 }
-
+.section-title{
+  font-size: 36px;
+  font-family: 'lustriaregular';
+}
 
 
 
