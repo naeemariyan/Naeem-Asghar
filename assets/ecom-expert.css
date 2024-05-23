@@ -442,6 +442,12 @@ font-weight: 400;
 .hidden{
   display:none;
 }
+.w-100{
+width: 100%;
+}
+.h-100{
+  width: 100%;
+}
 .product-grids .product-image{
   padding: 100%;
   background-size: cover;
