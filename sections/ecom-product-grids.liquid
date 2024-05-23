@@ -1,6 +1,9 @@
 {% if section.blocks.size > 0 %}
   <section class="sectoin-wrapper section--{{ section.id }}">
     <div class="container">
+      {% if section.settings.title != blank %}
+      <h3 class="section-title">{{ section.settings.title }}</h3>
+        {% endif %}
     <div class="flex-row product-grids">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
