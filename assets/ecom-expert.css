@@ -449,7 +449,7 @@ width: 100%;
   width: 100%;
 }
 .product-grids .product-image{
-  padding: 100%;
+  padding-top: 100%;
   background-size: cover;
   background-position: top center;
 }
