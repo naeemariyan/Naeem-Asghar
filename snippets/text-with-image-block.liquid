@@ -3,7 +3,15 @@
     <div class="flex-row m-0">
       <div class="col-lg-5 col">
         <div class="innerbox-w-fix">
-          sss
+          {% if block.settings.title !=blank %}
+            <h2 class="title">{{ block.settings.title }}</h2>  
+          {% endif %}
+          {% if block.settings.text !=blank %}
+            {{ block.settings.text }}
+          {% endif %}
+          {% if block.settings.btn_text !=blank %}
+            <a class="btn {{ block.settings.btn_style }}" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
+          {% endif %}
         </div>
       </div>
       <div class="col-lg-7 col p-0">
