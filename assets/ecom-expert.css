@@ -450,8 +450,8 @@ width: 100%;
 }
 .product-grids .product-image{
   padding-top: 100%;
-  background-size: cover;
-  background-position: top center;
+  background-size: cover !important;
+  background-position: top center !important;
 }
 .product-grids .product-grid{
   margin-bottom: 30px;
