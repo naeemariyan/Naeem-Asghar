@@ -1,5 +1,6 @@
 {% if section.blocks.size > 0 %}
   <section class="sectoin-wrapper section--{{ section.id }}">
+    <div class="container">
     <div class="flex-row product-grids">
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
@@ -9,7 +10,8 @@
           </a>
         </div>
     {% endfor %}
-      </div
+    </div>
+    </div>
   </section>
 {% endif %}
 
