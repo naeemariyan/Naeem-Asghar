@@ -471,8 +471,12 @@ width: 100%;
 }
 .product-grids .product-grid{
   margin-bottom: 30px;
+  position: relative;
 }
-
+.product-grids .product-grid .product-popup-icon{
+  position: absolute;
+  z-index: 1;
+}
 
 
 
