@@ -7,7 +7,18 @@
             <img src="{{ product.featured_image.src | product_img_url: "300x" }}" alt="{{ product.title | escape }}" width="100%" height="auto"/>
           </div>
           <div class="lightbox-image col col-xs-7">
-            <h4>{{ product.title }}</h4>
+            <h4>{{ product.title }}</h4> 
+
+            <h5 class="fs-5 lustria-font">{{ product.price | money }}</h5>
+
+            <div class="product-grid-except">
+                {% if product.metafields.custom.short_description != blank %}
+                  <p>{{ product.metafields.custom.short_description }}</p>
+                {% else %}
+                  {{ product.description }}
+                {% endif %}
+            </div>
+            
           </div>
         </div>
       </div>
