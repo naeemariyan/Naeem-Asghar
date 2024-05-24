@@ -28,8 +28,8 @@
                 {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
                     {% continue %}
                 {% endif %}
-              <div class="product-variant-options">
-              <h6 class="fs-6 m-0">{{ option.name }}</h6>
+              <div class="product-variant-options product-options-container">
+              <h6 class="fs-6 m-0 option-title">{{ option.name }}</h6>
               <div class="color-options flex flex-wrap align-items-center ecom-radio-option">
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color }}">
@@ -45,8 +45,8 @@
                 {% if option.name == 'color' or option.name == 'Color' or option.name == 'COLOR' %}
                     {% continue %}
                 {% endif %}
-              <div class="product-variant-options">
-              <h6 class="fs-6 m-0">{{ option.name }}</h6>
+              <div class="product-variant-options product-options-container">
+              <h6 class="fs-6 m-0 option-title">{{ option.name }}</h6>
               <div class="color-options ecom-dropdown-option">
                 <label for="option-{{ product.id }}-{{ color }}">
                   <select id="option-{{ product.id }}-{{ color }}" name="{{ option.name | handle }}">
