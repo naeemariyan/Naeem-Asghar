@@ -534,6 +534,9 @@ width: 100%;
 }
 .ecom-dropdown-option select{
   background: url(angle-down.svg) no-repeat;
+  background-color:none;
+  position: relative;
+  z-index: 1;
   background-position: right center;
   background-size: 12px auto;
   border: 0.5px solid #000000;
@@ -550,6 +553,7 @@ width: 100%;
     line-height: 1;
     display: block;
     position: relative;
+    background: #fff;
 }
 .ecom-dropdown-option label:after {
     width: 55px;
@@ -559,8 +563,9 @@ width: 100%;
     top:0;
     right:0;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
   border-left: 0.5px solid #000000;
+  
 }
 .product-options-container{
   margin-bottom: 15px;
