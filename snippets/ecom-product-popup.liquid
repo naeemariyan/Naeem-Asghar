@@ -40,7 +40,7 @@
               {% endfor %}
             
             {% for option in options %}
-                {% if option.name == 'color' and option.name == 'Color' and option.name == 'COLOR' %}
+                {% if option.name == 'color' or option.name == 'Color' or option.name == 'COLOR' %}
                     {% continue %}
                 {% endif %}
               <div class="product-variant-options">
