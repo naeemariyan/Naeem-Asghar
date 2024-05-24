@@ -497,7 +497,24 @@ width: 100%;
   padding-bottom: 30px;
 }
 
+.product-variants .color-options .radio-btn{
+    border: 0.5px solid #000000;
+    line-height: 18px;
+    display: block;
+    font-size: 18px;
+    padding: 10px 40px;
+}
 
+.product-variants .color-options{
+      gap: 5px 0px;
+}
+.product-variants .color-options .radio-btn{
+    border: 0.5px solid #000000;
+    line-height: 18px;
+    display: block;
+    font-size: 18px;
+    padding: 10px 40px;
+}
 
 
 

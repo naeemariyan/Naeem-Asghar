@@ -30,7 +30,7 @@
                 {% endif %}
               <div class="product-variant-options">
               <h6 class="fs-6 m-0">{{ option.name }}</h6>
-              <div class="color-options">
+              <div class="color-options flex flex-wrap align-items-center">
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color }}">
                   <span class="radio-btn">{{ color }}</span>
