@@ -361,5 +361,10 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {%- if page-handle -%}
+      <script src="{{ 'ecom-expert.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    
   </body>
 </html>
