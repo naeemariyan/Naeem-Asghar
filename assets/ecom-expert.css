@@ -574,6 +574,13 @@ width: 100%;
   margin-bottom: 8px;
 }
 
+.product-grid-form .add-to-cart{
+    background-size: 33px auto;
+    background-position-x: calc(100% - calc(50% - 34px) / 2);
+}
+.product-grid-form .add-to-cart:hover{
+   background-position-x: calc(100% - calc(50% - 70px) / 2);
+}
 
 
 
