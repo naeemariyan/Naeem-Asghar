@@ -29,11 +29,13 @@
                     {% continue %}
                 {% endif %}
               <div class="product-variant-options">
-              <h6 class="fs-6">{{ option.name }}</h6>
+              <h6 class="fs-6 m-0">{{ option.name }}</h6>
               <div class="color-options">
                 {% for color in option.values %}
-                <label for="option-{{ product.id }}-{{ color }}">{{ color }}</label>
-                <input type="radio" id="option-{{ product.id }}-{{ color }}" value="{{ color }}" />
+                <label for="option-{{ product.id }}-{{ color }}">
+                  <span class="radio-btn">{{ color }}</span>
+                  <input type="radio" id="option-{{ product.id }}-{{ color }}" value="{{ color }}" />
+                </label>
                 {% endfor %}
               </div>
               </div>
@@ -44,7 +46,7 @@
                     {% continue %}
                 {% endif %}
               <div class="product-variant-options">
-              <h6 class="fs-6">{{ option.name }}</h6>
+              <h6 class="fs-6 m-0">{{ option.name }}</h6>
               <div class="color-options">
                 <label for="option-{{ product.id }}-{{ color }}">
                   <select id="option-{{ product.id }}-{{ color }}">
