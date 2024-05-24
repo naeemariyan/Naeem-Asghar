@@ -514,15 +514,16 @@ width: 100%;
 .product-variants .color-options{
       gap: 5px 0px;
 }
-.product-variants .color-options .radio-btn{
+.ecom-radio-option .radio-btn{
     border: 0.5px solid #000000;
     line-height: 18px;
     display: block;
     font-size: 18px;
-    padding: 10px;
+    padding: 10px 10px 10px 16px;
     min-width:115px;
+    position: relative;
 }
-.product-variants .color-options .radio-btn:before{
+.ecom-radio-option .radio-btn:before{
     content: "";
     position: absolute;
     width: 6px;
@@ -531,6 +532,12 @@ width: 100%;
     top: 0;
     border-right: 0.5px solid #000;
 }
+.ecom-dropdown-option select{
+  background: url(angle-down.svg) no-repeat;
+  background-position: right center;
+  background-size: 12px auto;
+}
+
 
 
 
