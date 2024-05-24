@@ -18,8 +18,24 @@
                   {{ product.description }}
                 {% endif %}
             </div>
-            
           </div>
+        </div>
+        <div class="product-add-cart-form">
+          <form>
+          <div class="product-variants" id="product-variants-{{ product.id }}">
+              {% assign options = product.options_with_values %}
+              {{ options.color.name }}
+              {% for option in options %}
+                {{ option.name }}
+              <div class="color-options">
+                <label></label>
+                {% for color in option.values %}
+                <input type="radio" value="{{ color }}" />
+                {% endfor %}
+              </div>
+              {% endfor %}
+          </div>
+          </form>
         </div>
       </div>
     </div>
