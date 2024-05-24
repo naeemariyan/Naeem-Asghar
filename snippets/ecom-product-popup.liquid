@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="product-add-cart-form">
-          <form>
+          <form class="product-grid-form">
           <div class="product-variants" id="product-variants-{{ product.id }}">
               {% assign options = product.options_with_values %}
               {% for option in options %}
@@ -34,7 +34,7 @@
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color }}">
                   <span class="radio-btn">{{ color }}</span>
-                  <input type="radio" class="hidden" id="option-{{ product.id }}-{{ color }}" name="{{ option.name | handle }}" value="{{ color }}" />
+                  <input type="radio" class="hidden" onchange="update_selected_variants('{{ product.id }}')" id="option-{{ product.id }}-{{ color }}" name="{{ option.name | handle }}" value="{{ color }}" />
                 </label>
                 {% endfor %}
               </div>
