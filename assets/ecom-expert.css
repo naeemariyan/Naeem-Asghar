@@ -548,6 +548,8 @@ width: 100%;
     font-size: 16px;
     font-weight: 400;
       background-position: calc(100% - 20px) center;
+  outline: none;
+  box-shadow: none;
 }
 .ecom-dropdown-option label{
     line-height: 1;
