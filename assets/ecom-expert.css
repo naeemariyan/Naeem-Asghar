@@ -519,7 +519,8 @@ width: 100%;
     line-height: 18px;
     display: block;
     font-size: 18px;
-    padding: 10px 40px;
+    padding: 10px;
+    min-width:115px;
 }
 
 
