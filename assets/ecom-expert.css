@@ -541,9 +541,26 @@ width: 100%;
   height: 40px;
   -webkit-appearance: none;
     -moz-appearance: none;
+      padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
 }
-
-
+.ecom-dropdown-option label{
+    line-height: 1;
+    display: block;
+    position: relative;
+}
+.ecom-dropdown-option label:after {
+    width: 55px;
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    z-index: 1;
+  border-left: 0.5px solid #000000;
+}
 
 
 
