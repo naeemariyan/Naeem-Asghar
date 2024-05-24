@@ -562,8 +562,12 @@ width: 100%;
     z-index: 1;
   border-left: 0.5px solid #000000;
 }
-
-
+.product-options-container{
+  margin-bottom: 12px;
+}
+.product-options-container .option-title{
+  margin-bottom: 7px;
+}
 
 
 
