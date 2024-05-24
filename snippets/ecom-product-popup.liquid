@@ -28,13 +28,35 @@
                 {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
                     {% continue %}
                 {% endif %}
-                
-                {{ option.name }}
+              <div class="product-variant-options">
+              <h6 class="fs-6">{{ option.name }}</h6>
               <div class="color-options">
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color }}">{{ color }}</label>
                 <input type="radio" id="option-{{ product.id }}-{{ color }}" value="{{ color }}" />
                 {% endfor %}
+              </div>
+              </div>
+              {% endfor %}
+            
+            {% for option in options %}
+                {% if option.name == 'color' and option.name == 'Color' and option.name == 'COLOR' %}
+                    {% continue %}
+                {% endif %}
+              <div class="product-variant-options">
+              <h6 class="fs-6">{{ option.name }}</h6>
+              <div class="color-options">
+                <label for="option-{{ product.id }}-{{ color }}">
+                  <select id="option-{{ product.id }}-{{ color }}">
+                    <opion value="">Choose your {{ option.name | downcase }}</opion>
+                    {% for color in option.values %}
+                      <option value="{{ color }}">
+                        {{ color }}
+                      </option>
+                    {% endfor %}
+                  </select>
+                </label>
+              </div>
               </div>
               {% endfor %}
           </div>
