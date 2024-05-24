@@ -25,6 +25,10 @@
           <div class="product-variants" id="product-variants-{{ product.id }}">
               {% assign options = product.options_with_values %}
               {% for option in options %}
+                {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
+                    {% continue %}
+                {% endif %}
+                
                 {{ option.name }}
               <div class="color-options">
                 {% for color in option.values %}
