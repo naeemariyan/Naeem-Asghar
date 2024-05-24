@@ -34,7 +34,7 @@
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color }}">
                   <span class="radio-btn">{{ color }}</span>
-                  <input type="radio" id="option-{{ product.id }}-{{ color }}" name="{{ option.name | handle }}" value="{{ color }}" />
+                  <input type="radio" class="hidden" id="option-{{ product.id }}-{{ color }}" name="{{ option.name | handle }}" value="{{ color }}" />
                 </label>
                 {% endfor %}
               </div>
