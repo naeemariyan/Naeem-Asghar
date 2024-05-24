@@ -522,7 +522,15 @@ width: 100%;
     padding: 10px;
     min-width:115px;
 }
-
+.product-variants .color-options .radio-btn:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-right: 0.5px solid #000;
+}
 
 
 
