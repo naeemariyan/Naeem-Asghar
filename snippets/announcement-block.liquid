@@ -20,11 +20,11 @@
           <div class="flex-row d-md-block m-lg-0">
             {% if block.settings.accordion %}
             <div class="col-xs-3 col col-lg-hidden">
-              <button type="button" class="unstyle-btn d-inline" onclick="togglerLight('menuToggler-{{ block.id }}', 'active')">
-                <span class="icon burger-icon" id="hamburger-{{ block.id }}" onclick="togglerLight('hamburger-{{ block.id }}', 'hidden')">
+              <button type="button" class="unstyle-btn d-inline" onclick="togglerLight('menuToggler-{{ block.id }}', 'menu-collapse')">
+                <span class="icon burger-icon">
                   {% render "icon-hamburger2" %}
                 </span>
-                <span class="icon close-icon hidden" id="hamburger-close-{{ block.id }}" onclick="togglerLight('hamburger-close-{{ block.id }}', 'hidden')">
+                <span class="icon close-icon hidden">
                   {% render "icon-close2" %}
                 </span>
               </button>
