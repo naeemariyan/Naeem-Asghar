@@ -638,3 +638,9 @@ width: 100%;
 .lightbox .product-add-cart-form{
   margin-top: 10px;
 }
+.d-flex{
+  display: flex;
+}
+.justify-content-end{
+  justify-content: flex-end
+}
