@@ -456,12 +456,12 @@ font-weight: 400;
   .announcement-accordion-body{
       height: 0;
       overflow: hidden;
-      padding: 0;
+      padding: 0 !important;
       transition: all 0.7s;
   }
   .announcement-accordion-body.active{
-        padding-top: 23px;
-        padding-bottom: 23px;
+        padding-top: 23px !important;
+        padding-bottom: 23px !important;
         height: auto;
   }
 }
