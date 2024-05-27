@@ -10,7 +10,7 @@
         <div class="col col-md-4 col-xs-6 product-grid">
           {% render "ecom-product-grid", product: product %}
           {% render "ecom-product-popup", product: product %}
-          <script id="product-string-tempalte-{{ product.id }}">JSON.stringify({{product | json }});</script>
+          <script id="product-string-tempalte-{{ product.id }}">'{{product | json }}'</script>
       </div>
       
       
