@@ -1,7 +1,7 @@
 function update_selected_variants(p_id){
   var template, productSelections, productCheckboxs, selectedOptions, checkedOptions, selectedItems, matchedVariant
   template = document.getElementById('product-string-tempalte-'+p_id).innerHTML;
-  template = template.replaceAll("'", "");
+  template = JSON.parse(template.replaceAll("'", ""));
   
   productSelections = document.querySelectorAll("#product-variants-"+p_id+" select");
   productCheckboxs  = document.querySelectorAll("#product-variants-"+p_id+" input[type=radio]:checked");
