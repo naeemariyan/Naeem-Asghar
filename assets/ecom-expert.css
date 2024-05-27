@@ -121,6 +121,7 @@ padding:0;
     background-size: 24px auto;
     background-position: calc(100% - 22px) center;
     transition: all 0.5s;
+    cursor: pointer;
 }
 .btn:hover{
   background-position: calc(100% - 15px) center;
