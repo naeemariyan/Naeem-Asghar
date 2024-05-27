@@ -522,6 +522,10 @@ width: 100%;
     padding: 10px 10px 10px 16px;
     min-width:115px;
     position: relative;
+    cursor: pointer;
+ 
+.ecom-radio-option .radio-btn + input:checked{
+  background:#000;
 }
 .ecom-radio-option .radio-btn:before{
     content: "";
