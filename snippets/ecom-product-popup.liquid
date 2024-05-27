@@ -1,3 +1,4 @@
+{% assign options = product.options_with_values %}
 {% for option in options %}
   {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
       {% continue %}
