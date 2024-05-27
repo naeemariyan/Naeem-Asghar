@@ -16,8 +16,8 @@
           {% assign c = v.metafields.custom.color %}
         {% endif %}
     {% endfor %}
-    
-        #option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
+      .ecom-radio-option .radio-btn:before
+        .option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
           background: {{c}};
         }
   
@@ -58,7 +58,7 @@
                 {% endif %}
               <div class="product-variant-options product-options-container">
               <h6 class="fs-6 m-0 option-title">{{ option.name }}</h6>
-              <div class="color-options flex flex-wrap align-items-center ecom-radio-option">
+              <div class="color-options flex flex-wrap align-items-center ecom-radio-option option-{{ product.id }}-{{ color | handle }}">
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color | handle }}">
                   <span class="radio-btn">{{ color }}</span>
