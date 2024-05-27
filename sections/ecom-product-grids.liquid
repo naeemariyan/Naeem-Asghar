@@ -8,16 +8,14 @@
     {% for block in section.blocks %}
       {% assign product = all_products[block.settings.product] %}
         <div class="col col-md-4 col-xs-6 product-grid">
-          <div class="inner position-relative">
-          <a href="{{ product.url }}" class="d-block">
-            <div class="product-image d-block w-100" style="background: url({{ product.featured_image.src | product_img_url: "600x" }})"></div>
-          </a>
-          <button type="button" class="product-popup-icon unstyle-btn" style="top:{{ block.settings.top }}%; left:{{ block.settings.left }}%;">
-            <img src="{{ "icon-plus.svg" | asset_url }}" width="auto" height="auto" alt="+" />
-          </button>
-        </div>
+          {% render "ecom-product-grid", product: product %}
           {% render "ecom-product-popup", product: product %}
+          <script id="product-string-tempalte-{{ product.id }}">
+            {{product | json }}
+          </script>
       </div>
+      
+      
     {% endfor %}
     </div>
     </div>
