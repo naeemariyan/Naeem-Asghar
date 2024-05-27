@@ -9,7 +9,6 @@
   {% endif %}
   {% for color in option.values %}
     {% assign c = '#fff' %}
-    {{ color }}
     {% for v in product.variants %}
         {% assign ajoin = v.options | join: ", " %}
         {% if ajoin contains color %}
