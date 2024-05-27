@@ -50,7 +50,7 @@
               <div class="color-options ecom-dropdown-option">
                 <label for="option-{{ product.id }}-{{ option.name | handle }}">
                   <select id="option-{{ product.id }}-{{ option.name | handle }}" name="{{ option.name | handle }}" onchange="update_selected_variants('{{ product.id }}')">
-                    <opion value="">Choose your {{ option.name | downcase }}</opion>
+                    <option value="">Choose your {{ option.name | downcase }}</option>
                     {% for opt in option.values %}
                       <option value="{{ opt }}">
                         {{ opt }}
