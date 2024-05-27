@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="product-add-cart-form">
-          <form class="product-grid-form" method="post" action="/cart/add">
+          <form class="product-grid-form" method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
           <div class="product-variants" id="product-variants-{{ product.id }}">
               {% assign options = product.options_with_values %}
               {% for option in options %}
@@ -89,7 +89,7 @@
 
            <div class="form-footer">
              <input id="product-selected-variant-{{ product.id }}" type="hidden" value="" />
-             <button type="submit" class="btn btn-black add-to-cart w-100">Add to cart</button>
+             <button type="submit" class="btn btn-black add-to-cart w-100 product-form__submit" name="add">Add to cart</button>
            </div> 
           </form>
         </div>
