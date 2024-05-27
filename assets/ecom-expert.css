@@ -588,4 +588,39 @@ width: 100%;
 }
 
 
+/***** Lightbox ****/
 
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.lightbox .lightbox .lightbox-inner{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.lightbox .lightbox-container {
+    max-width: 340px;
+    background: #fff;
+}
+.lightbox .lightbox-container h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.lightbox .lightbox-container h5{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.lightbox .lightbox-container p{
+    margin: 0;
+}
+.lightbox .product-add-cart-form{
+  margin-top: 10px;
+}
