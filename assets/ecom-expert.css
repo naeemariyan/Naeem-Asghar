@@ -453,6 +453,17 @@ font-weight: 400;
   .mobile-hidden{
     display: none;
   }
+  .announcement-accordion-body{
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: all 0.7s;
+  }
+  .announcement-accordion-body.active{
+        padding-top: 23px;
+        padding-bottom: 23px;
+        height: auto;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
