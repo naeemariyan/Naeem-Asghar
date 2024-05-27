@@ -5,6 +5,7 @@
       {% continue %}
   {% endif %}
   {% for color in option.values %}
+    {{ color }}
     {% assign c = '#fff' %}
     {% for v in product.variants %}
         {% assign ajoin = v.options | join: ", " %}
