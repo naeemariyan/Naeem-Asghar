@@ -20,7 +20,7 @@ function update_selected_variants(p_id){
           return variant.options.some((option, i) => variant.options.includes(selectedItems[i]));
        });
   }
-  if(variantIdField){
+  if(matchedVariant){
     variantIdField.value = matchedVariant.id;
   }
   console.log(matchedVariant)
