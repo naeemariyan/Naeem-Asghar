@@ -20,7 +20,7 @@
           <div class="flex-row d-md-block m-lg-0">
             {% if block.settings.accordion %}
             <div class="col-xs-3 col col-lg-hidden">
-              <button type="button" class="unstyle-btn d-inline" onclick="togglerLight('menuToggler-{{ block.id }}', 'menu-collapse')">
+              <button type="button" class="unstyle-btn d-inline" onclick="togglerLight('menuToggler-{{ block.id }}', 'menu-collapse', this)">
                 <span class="icon burger-icon">
                   {% render "icon-hamburger2" %}
                 </span>
