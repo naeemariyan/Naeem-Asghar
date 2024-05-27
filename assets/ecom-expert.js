@@ -11,7 +11,7 @@ function update_selected_variants(p_id){
 
   selectedItems = selectedOptions.concat(checkedOptions);
 
-  matchedVariant = template.variants.map(variant => {
+  matchedVariant = template.variants.find(variant => {
     return variant.options.every((option, index)=> selectedItems[inex]);
   })
   if(!matchedVariant){
