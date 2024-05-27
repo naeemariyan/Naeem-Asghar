@@ -16,6 +16,7 @@ function update_selected_variants(p_id){
     return variant.options.every((option, index)=> selectedItems[index]);
   })
   if(!matchedVariant){
+      console.log('here');
        matchedVariant = template.variants.find(variant => {
           return variant.options.some((option, i) => variant.options.includes(selectedItems[i]));
        });
