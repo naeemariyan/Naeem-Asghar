@@ -1,6 +1,24 @@
 {% assign options = product.options_with_values %}
 
-    
+    {% for option in options %}
+  {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
+      {% continue %}
+  {% endif %}
+  {% for color in option.values %}
+    {% assign c = '#fff' %}
+    {% for v in product.variants %}
+        {% assign ajoin = v.options | join: ", " %}
+        {% if ajoin contains color %}
+          {% assign c = v.metafields.custom.color %}
+        {% endif %}
+    {% endfor %}
+      .ecom-radio-option .radio-btn:before
+        .option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
+          background: {{c}};
+        }
+  
+  {% endfor %}
+{% endfor %}
 
 {% style %}
   {% for option in options %}
