@@ -26,6 +26,11 @@
   <div class="lightbox-inner">
     <div class="lightbox-container">
       <div class="lightbox-body px py">
+        <div class="inner px py">
+            <button class="unstyle-btn" type="button">
+              {% render "icon-close2" %}
+            </button>
+        </div>
         <div class="flex-row">
           <div class="lightbox-image col col-xs-5">
             <img src="{{ product.featured_image.src | product_img_url: "300x" }}" alt="{{ product.title | escape }}" width="100%" height="auto"/>
