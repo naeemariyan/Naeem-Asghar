@@ -523,7 +523,7 @@ width: 100%;
     min-width:115px;
     position: relative;
     cursor: pointer;
- 
+}
 .ecom-radio-option .radio-btn + input:checked{
   background:#000;
 }
