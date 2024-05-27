@@ -30,6 +30,7 @@ function togglerLight(id, cls) {
   element.classList.toggle(cls);
   if(cls == 'menu-collapse'){
     element.querySelectorAll('.icon').forEach(function(icon) {
+      console.log(icon);
       icon.classList.toggle("hidden");
     });
   }
