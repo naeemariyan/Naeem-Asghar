@@ -2,7 +2,7 @@
     font-family: 'jostregular';
     src: url('jost-400-book-webfont.woff2') format('woff2'),
          url('jost-400-book-webfont.woff') format('woff');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -10,14 +10,14 @@
     font-family: 'jostmedium';
     src: url('jost-500-medium-webfont.woff2') format('woff2'),
          url('jost-500-medium-webfont.woff') format('woff');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'lustriaregular';
     src: url('lustria-regular-webfont.woff2') format('woff2'),
          url('lustria-regular-webfont.woff') format('woff');
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -28,6 +28,15 @@ body{
   line-height: 1;
   margin: 0;
   padding: 0;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
   font-weight: 400;
 }
 
