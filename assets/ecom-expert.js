@@ -26,6 +26,12 @@ function update_selected_variants(p_id){
 }
 
 function togglerLight(id, cls) {
-  document.getElementById(id).classList.toggle(cls);
+  var element = document.getElementById(id);
+  element.classList.toggle(cls);
+  if(cls == 'menu-collapse'){
+    element.querySelectorAll('.icon').forEach(function(icon) {
+      icon.classList.toggle("hidden");
+    });
+  }
 }
 
