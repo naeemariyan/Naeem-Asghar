@@ -1,3 +1,10 @@
+{% for v in product.variants %}
+        {{v.options | json }}
+        {% if v.options contains color %}
+          {% assign color = v.metafields.custom.color %}
+        {% endif %}
+    {% endfor %}
+
 {% style %}
 {% for option in options %}
   {% if option.name != 'color' and option.name != 'Color' and option.name != 'COLOR' %}
