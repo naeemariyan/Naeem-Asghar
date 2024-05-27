@@ -11,7 +11,7 @@
           {% render "ecom-product-grid", product: product %}
           {% render "ecom-product-popup", product: product %}
           <script id="product-string-tempalte-{{ product.id }}">
-            {{product | json }}
+            `{{product | json }}`
           </script>
       </div>
       
