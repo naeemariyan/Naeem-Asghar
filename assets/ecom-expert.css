@@ -138,6 +138,10 @@ padding:0;
   padding-right: 15px;
   padding-left: 15px;
 }
+.py{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .flex{
 display: flex;
 }
