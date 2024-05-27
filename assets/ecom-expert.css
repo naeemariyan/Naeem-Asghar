@@ -97,7 +97,7 @@ h6{
   font-size: 30px;
 }
 .fs-extra-1{
-  font-size: 50px;
+  font-size: 70px;
 }
 .small{
   font-size: 12px;
@@ -671,4 +671,14 @@ width: 100%;
 }
 .justify-content-end{
   justify-content: flex-end
+}
+.text-baner-wrappper .innerbox-w-fix{
+  max-width: 483px;
+  margin-left: auto;
+}
+.text-baner-wrappper .innerbox-w-fix h2{
+      margin-bottom: 47px;
+}
+.text-baner-wrappper .innerbox-w-fix p{
+      line-height: 28px;
 }
