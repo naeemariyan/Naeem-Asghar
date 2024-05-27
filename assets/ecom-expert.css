@@ -28,6 +28,7 @@ body{
   line-height: 1;
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 .container{
@@ -584,6 +585,7 @@ width: 100%;
 }
 .product-options-container .option-title{
   margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .product-grid-form .add-to-cart{
