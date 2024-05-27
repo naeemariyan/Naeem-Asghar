@@ -28,11 +28,8 @@ function update_selected_variants(p_id){
 function togglerLight(id, cls, $this) {
   var element = document.querySelector('#'+id);
   element.classList.toggle(cls);
-  console.log('icon');
   if(cls == 'menu-collapse'){
-    console.log($this.querySelectorAll('.icon'));
     $this.querySelectorAll('.icon').forEach(function(icon) {
-      console.log(icon);
       icon.classList.toggle("hidden");
     });
   }
