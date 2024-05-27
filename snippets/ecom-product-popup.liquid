@@ -1,5 +1,5 @@
 {% for v in product.variants %}
-        {{v.options | json }}<br>
+        {{v.options | join ","}}<br>
         {% if v.options contains color %}
           {% assign color = v.metafields.custom.color %}
         {% endif %}
