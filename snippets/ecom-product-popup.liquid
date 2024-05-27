@@ -13,10 +13,13 @@
         {% if ajoin contains color %}
           {% assign c = v.metafields.custom.color %}
         {% endif %}
+    {% endfor %}
+       #option-{{ product.id }}-{{ color | handle }} .radio-btn{
+         display:none;
+       }
         #option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
           background: {{c}};
         }
-  {% endfor %}
   {% endfor %}
 {% endfor %}
 {% endstyle %}
