@@ -26,7 +26,7 @@ function update_selected_variants(p_id){
 }
 
 function togglerLight(id, cls) {
-  var element = document.getElementById(id);
+  var element = document.querySelector('#'+id);
   element.classList.toggle(cls);
   if(cls == 'menu-collapse'){
     element.querySelectorAll('.icon').forEach(function(icon) {
