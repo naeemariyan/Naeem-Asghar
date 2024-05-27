@@ -597,7 +597,7 @@ width: 100%;
     width: 100%;
     z-index: 999999;
 }
-.lightbox .lightbox .lightbox-inner{
+.lightbox .lightbox-inner{
     position: relative;
     z-index: 2;
     display: flex;
