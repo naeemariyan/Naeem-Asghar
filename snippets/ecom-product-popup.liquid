@@ -51,9 +51,9 @@
                 <label for="option-{{ product.id }}-{{ option.name | handle }}">
                   <select id="option-{{ product.id }}-{{ option.name | handle }}" name="{{ option.name | handle }}" onchange="update_selected_variants('{{ product.id }}')">
                     <opion value="">Choose your {{ option.name | downcase }}</opion>
-                    {% for color in option.values %}
-                      <option value="{{ color }}">
-                        {{ color }}
+                    {% for opt in option.values %}
+                      <option value="{{ opt }}">
+                        {{ opt }}
                       </option>
                     {% endfor %}
                   </select>
