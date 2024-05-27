@@ -19,13 +19,13 @@
     {% assign c = '#fff' %}
     {% for v in product.variants %}
         {% assign ajoin = v.options | join: ", " %}
-        {% if ajoin contains color %}
+        {% if color contains ajoin %}
           {% assign c = v.metafields.custom.color %}
         {% endif %}
-    {% endfor %}
-    #option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
-      background: {{c}};
-    }
+        #option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
+          background: {{c}};
+        }
+  {% endfor %}
   {% endfor %}
 {% endfor %}
 {% endstyle %}
