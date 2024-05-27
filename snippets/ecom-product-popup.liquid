@@ -1,8 +1,14 @@
-{% for v in product.variants %}
-        {% if v.options contains color %}
-          {% assign color = v.metafields.custom.color %}
-        {% endif %}
+{% for color in option.values %}
+        {% assign c = '#fff' %}
+        {% for v in product.variants %}
+            {% assign ajoin = v.options | join: ", " %}
+            {% if ajoin contains color %}
+              {% assign c = v.metafields.custom.color %}
+            {% endif %}
+        {% endfor %}
+        {{ c }}
     {% endfor %}
+    
 
 {% style %}
 {% for option in options %}
@@ -10,15 +16,15 @@
       {% continue %}
   {% endif %}
   {% for color in option.values %}
-    {% assign color = '#fff' %}
+    {% assign c = '#fff' %}
     {% for v in product.variants %}
         {% assign ajoin = v.options | join: ", " %}
         {% if ajoin contains color %}
-          {% assign color = v.metafields.custom.color %}
+          {% assign c = v.metafields.custom.color %}
         {% endif %}
     {% endfor %}
     #option-{{ product.id }}-{{ color | handle }} .radio-btn:before{
-      background: {{color}};
+      background: {{c}};
     }
   {% endfor %}
 {% endfor %}
