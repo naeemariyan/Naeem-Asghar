@@ -2,7 +2,7 @@
   <a href="{{ product.url }}" class="d-block">
     <div class="product-image d-block w-100" style="background: url({{ product.featured_image.src | product_img_url: "600x" }})"></div>
   </a>
-  <button type="button" class="product-popup-icon unstyle-btn" style="top:{{ block.settings.top }}%; left:{{ block.settings.left }}%;" onclick="togglerLight('lightbox-{{ product.id }}', 'popup')">
+  <button type="button" class="product-popup-icon unstyle-btn" style="top:{{ block.settings.top }}%; left:{{ block.settings.left }}%;" onclick="togglerLight('lightbox-{{ product.id }}', 'popup', this)">
     <img src="{{ "icon-plus.svg" | asset_url }}" width="auto" height="auto" alt="+" />
   </button>
 </div>
