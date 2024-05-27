@@ -13,7 +13,7 @@ function update_selected_variants(p_id){
   selectedItems = selectedOptions.concat(checkedOptions);
 console.log(selectedItems);
   matchedVariant = template.variants.find(variant => {
-    return variant.options.every((option, index)=> selectedItems[index]);
+    return variant.options.every((option, index)=> option === selectedItems[index]);
   })
   if(!matchedVariant){
       console.log('here');
