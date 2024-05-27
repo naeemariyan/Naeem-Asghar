@@ -6,7 +6,7 @@
   {% for color in option.values %}
     {% assign color = '#fff' %}
     {% for v in product.variants %}
-        {% if v contains.options color %}
+        {% if v.options contains color %}
           {% assign color = v.metafields.custom.color %}
         {% endif %}
     {% endfor %}
