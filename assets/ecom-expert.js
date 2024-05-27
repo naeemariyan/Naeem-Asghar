@@ -11,7 +11,6 @@ function update_selected_variants(p_id){
   checkedOptions = Array.from(productCheckboxs).map((select)=> select.value);
 
   selectedItems = selectedOptions.concat(checkedOptions);
-console.log(selectedItems);
   matchedVariant = template.variants.find(variant => {
     return variant.options.every((option, index)=> option === selectedItems[index]);
   })
@@ -24,7 +23,9 @@ console.log(selectedItems);
   if(matchedVariant){
     variantIdField.value = matchedVariant.id;
   }
-  console.log(matchedVariant)
-  
-  console.log("changed", this.value);
 }
+
+function togglerLight(id) {
+  document.getElementById(id).classList.toggle('popup');
+}
+
