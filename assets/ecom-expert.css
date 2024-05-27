@@ -460,7 +460,7 @@ font-weight: 400;
       padding: 0 !important;
       transition: all 0.7s;
   }
-  .announcement-accordion-body.active{
+  .announcement-accordion-body.menu-collapse{
         padding-top: 23px !important;
         padding-bottom: 23px !important;
         height: auto;
