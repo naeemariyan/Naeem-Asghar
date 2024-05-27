@@ -1,10 +1,11 @@
 function update_selected_variants(p_id){
-  var template, productSelections, productCheckboxs, selectedOptions, checkedOptions, selectedItems, matchedVariant
+  var template, productSelections, productCheckboxs, selectedOptions, checkedOptions, selectedItems, matchedVariant, variantIdField;
   template = document.getElementById('product-string-tempalte-'+p_id).innerHTML;
   template = JSON.parse(template.replaceAll("'", ""));
   
   productSelections = document.querySelectorAll("#product-variants-"+p_id+" select");
   productCheckboxs  = document.querySelectorAll("#product-variants-"+p_id+" input[type=radio]:checked");
+  variantIdField = document.querySelector("#product-selected-variant-"+p_id);
 
   selectedOptions = Array.from(productSelections).map((select)=> select.value);
   checkedOptions = Array.from(productCheckboxs).map((select)=> select.value);
@@ -19,7 +20,9 @@ function update_selected_variants(p_id){
           return variant.options.some((option, i) => variant.options.includes(selectedItems[i]));
        });
   }
-  
+  if(variantIdField){
+    variantIdField.value = matchedVariant.id;
+  }
   console.log(matchedVariant)
   
   console.log("changed", this.value);
