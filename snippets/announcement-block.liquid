@@ -20,7 +20,7 @@
           <div class="flex-row d-md-block m-lg-0">
             {% if block.settings.accordion %}
             <div class="col-xs-3 col col-lg-hidden">
-              <button type="button" class="unstyle-btn d-inline">
+              <button type="button" class="unstyle-btn d-inline" onclick="togglerLight('menuToggler-{{ block.id }}', 'active')">
                 <span class="icon burger-icon">
                   {% render "icon-hamburger2" %}
                 </span>
@@ -40,7 +40,7 @@
           </div>
         </div>
         {% endif %}
-        <div class="{% if block.settings.image != blank or block.settings.accordion == true %}col-lg-9 col-xs-12 col{% else %}col-xs-12 col{% endif %} {% if block.settings.accordion %} announcement-accordion-body {% endif %}">
+        <div class="{% if block.settings.image != blank or block.settings.accordion == true %}col-lg-9 col-xs-12 col{% else %}col-xs-12 col{% endif %} {% if block.settings.accordion %} announcement-accordion-body {% endif %}" id="menuToggler-{{ block.id }}">
           <div class="flex-row align-items-center">
             {% if block.settings.title != blank %}
             <div class="col {% if block.settings.btn_text != blank %}col-lg-8{% endif %} col-xs-12 text-center">
