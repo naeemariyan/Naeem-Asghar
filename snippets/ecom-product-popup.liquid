@@ -57,8 +57,8 @@
               <div class="color-options flex flex-wrap align-items-center ecom-radio-option">
                 {% for color in option.values %}
                 <label for="option-{{ product.id }}-{{ color | handle }}" class="option-{{ product.id }}-{{ color | handle }}">
-                  <span class="radio-btn">{{ color }}</span>
                   <input type="radio" class="hidden" onchange="update_selected_variants('{{ product.id }}')" id="option-{{ product.id }}-{{ color | handle }}" name="{{ option.name | handle }}" value="{{ color }}" />
+                  <span class="radio-btn">{{ color }}</span>
                 </label>
                 {% endfor %}
               </div>
