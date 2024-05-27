@@ -142,6 +142,9 @@ padding:0;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.pb{
+  padding-bottom: 15px;
+}
 .flex{
 display: flex;
 }
@@ -637,6 +640,10 @@ width: 100%;
 }
 .lightbox .product-add-cart-form{
   margin-top: 10px;
+}
+.lightbox .close-btn svg{
+    width: 12px;
+    height: 12px;
 }
 .d-flex{
   display: flex;
