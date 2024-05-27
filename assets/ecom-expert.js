@@ -25,7 +25,7 @@ function update_selected_variants(p_id){
   }
 }
 
-function togglerLight(id) {
-  document.getElementById(id).classList.toggle('popup');
+function togglerLight(id, cls) {
+  document.getElementById(id).classList.toggle(cls);
 }
 
