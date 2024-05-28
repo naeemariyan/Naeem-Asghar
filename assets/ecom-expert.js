@@ -35,13 +35,30 @@ function togglerLight(id, cls, $this) {
   }
 }
 
-var forms; 
+var forms, alertBox; 
 forms = document.querySelectorAll('.product-grid-form');
 if (forms.length > 0) {
   forms.forEach(function(form) {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
-      return false;
+      form.querySelectorAll('[data-required]').forEach(function(field){
+        if(field.getAttribute('type') == 'radio'){
+          var isChecked = Array.from(field).some(radio => radio.checked);
+          if(!isChecked){
+            alertBox .= '<span>Please select a '+field.getAttribute('data-required')+'. </span>';
+          }
+        }else if(field.tagName.toLowerCase() == 'select' ){
+          var isSelected = Array.from(field).some(select => select.value);
+          if(!isSelected){
+            alertBox .= '<span>Please select a '+field.getAttribute('data-required')+'. </span>';
+          }
+        }
+      });
+      if(alertBox){
+        form.querySelector('.form-footer').appendChild('<div class="alertbox-error">'+alertBox+'</div>');
+        return false;
+      }
+      return true;
     });
   });
 }
