@@ -22,7 +22,6 @@
           "type": "large_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame.png",
-            "mobile_image": "shopify:\/\/shop_images\/Frame_2.png",
             "btn_url": "",
             "btn_style": "full-image",
             "visiblity_control": "mobile-hidden"
@@ -41,7 +40,8 @@
             "img_align": "img-right",
             "bg_color": "#ffffff",
             "text_color": "",
-            "visiblity_control": "show-image"
+            "visiblity_control": "show-image",
+            "css_class": ""
           }
         },
         "announcement_block_bK4QQx": {
@@ -74,7 +74,7 @@
         "products_block_bELVd8": {
           "type": "products_block",
           "settings": {
-            "product": "orange-wide-leg",
+            "product": "black-leather-bag",
             "top": 52,
             "left": 59
           }
@@ -82,7 +82,7 @@
         "products_block_qDRicw": {
           "type": "products_block",
           "settings": {
-            "product": "tailored-jacket",
+            "product": "blue-silk-tuxedo",
             "top": 51,
             "left": 82
           }
@@ -90,7 +90,7 @@
         "products_block_aNcjng": {
           "type": "products_block",
           "settings": {
-            "product": "accordion-pleated-dress",
+            "product": "chequered-red-shirt",
             "top": 22,
             "left": 62
           }
@@ -98,7 +98,7 @@
         "products_block_L9r9Ae": {
           "type": "products_block",
           "settings": {
-            "product": "green-trench-coat",
+            "product": "classic-leather-jacket",
             "top": 17,
             "left": 69
           }
@@ -106,7 +106,7 @@
         "products_block_TcGTYk": {
           "type": "products_block",
           "settings": {
-            "product": "tennis-blue-t-shirt",
+            "product": "classic-varsity-top",
             "top": 25,
             "left": 47
           }
@@ -114,7 +114,7 @@
         "products_block_j6R3QH": {
           "type": "products_block",
           "settings": {
-            "product": "long-sleeve-tennis-top",
+            "product": "dark-denim-top",
             "top": 36,
             "left": 76
           }
