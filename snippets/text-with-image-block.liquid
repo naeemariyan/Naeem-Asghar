@@ -1,7 +1,7 @@
 {% if block != blank %}
   <div class="text-baner-wrappper {{ block.settings.visiblity_control }} {{ block.settings.css_class }}">
     <div class="flex-row m-0 align-items-center">
-      <div class="col-lg-5 col">
+      <div class="col-lg-5 col col-xs-12">
         <div class="innerbox-w-fix">
           {% if block.settings.title !=blank %}
             <h2 class="title jost-fw-medium fs-extra-1 m-0">{{ block.settings.title }}</h2>  
@@ -10,11 +10,11 @@
             <div class="text fs-3">{{ block.settings.text }}</div>
           {% endif %}
           {% if block.settings.btn_text !=blank %}
-            <a class="btn {{ block.settings.btn_style }}" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
+            <a class="btn mobile-hidden {{ block.settings.btn_style }}" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
           {% endif %}
         </div>
       </div>
-      <div class="col-lg-7 col p-0">
+      <div class="col-lg-7 col p-0 position-relative">
         {% if block.settings.image !=blank %}
           <picture class="d-block">
             <source media="(min-width:667px)" srcset="{{ block.settings.image | img_url: "master" }}">
@@ -22,6 +22,9 @@
             <img width="100%" height="auto" src="{{ block.settings.image | img_url: "master" }}" alt="Banner" />
           </picture>
       {% endif %}
+        {% if block.settings.btn_text !=blank %}
+            <a class="btn desktop-hidden {{ block.settings.btn_style }}" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text }}</a>
+          {% endif %}
       </div>
     </div>
   </div>
