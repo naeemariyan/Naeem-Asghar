@@ -25,7 +25,7 @@
             "mobile_image": "shopify:\/\/shop_images\/Frame_2.png",
             "btn_url": "",
             "btn_style": "full-image",
-            "visiblity_control": "show-image"
+            "visiblity_control": "mobile-hidden"
           }
         },
         "text_with_image_F4abWz": {
@@ -41,7 +41,7 @@
             "img_align": "img-right",
             "bg_color": "#ffffff",
             "text_color": "",
-            "visiblity_control": "mobile-hidden"
+            "visiblity_control": "show-image"
           }
         },
         "announcement_block_bK4QQx": {
