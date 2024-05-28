@@ -35,32 +35,45 @@ function togglerLight(id, cls, $this) {
   }
 }
 
-var forms, alertBox; 
-forms = document.querySelectorAll('.product-grid-form');
-if (forms.length > 0) {
-  forms.forEach(function(form) {
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      form.querySelectorAll('[data-required]').forEach(function(field){
-        if(field.getAttribute('type') == 'radio'){
-          var isChecked = Array.from(field).some(radio => radio.checked);
-          if(!isChecked){
-            alertBox .= '<span>Please select a '+field.getAttribute('data-required')+'. </span>';
-          }
-        }else if(field.tagName.toLowerCase() == 'select' ){
-          var isSelected = Array.from(field).some(select => select.value);
-          if(!isSelected){
-            alertBox .= '<span>Please select a '+field.getAttribute('data-required')+'. </span>';
-          }
+document.querySelectorAll('.product-grid-form').forEach(function(form) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Clear any previous alert messages
+        const previousAlertBox = form.querySelector('.alertbox-error');
+        if (previousAlertBox) {
+          previousAlertBox.remove();
         }
+
+        let alertBox = '';
+
+        form.querySelectorAll('[data-required]').forEach(function(field) {
+          if (field.getAttribute('type') === 'radio') {
+            // Get all radio buttons with the same name
+            const radios = form.querySelectorAll(`input[type="radio"][name="${field.name}"]`);
+            const isChecked = Array.from(radios).some(radio => radio.checked);
+            if (!isChecked) {
+              alertBox += `<span>Please select a ${field.getAttribute('data-required')}.</span><br>`;
+            }
+          } else if (field.tagName.toLowerCase() === 'select') {
+            if (!field.value) {
+              alertBox += `<span>Please select a ${field.getAttribute('data-required')}.</span><br>`;
+            }
+          } else if (!field.value) {
+            alertBox += `<span>Please enter a ${field.getAttribute('data-required')}.</span><br>`;
+          }
+        });
+
+        if (alertBox) {
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alertbox-error';
+          alertDiv.innerHTML = alertBox;
+          form.querySelector('.form-footer').appendChild(alertDiv);
+          return false;
+        }
+
+        return true;
       });
-      if(alertBox){
-        form.querySelector('.form-footer').appendChild('<div class="alertbox-error">'+alertBox+'</div>');
-        return false;
-      }
-      return true;
     });
-  });
-}
 
 
