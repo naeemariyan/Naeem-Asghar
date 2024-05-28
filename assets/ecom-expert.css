@@ -719,6 +719,15 @@ width: 100%;
     font-size: 16px;
     line-height: 20px;
   }
+  .btn-adjustment {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      white-space: nowrap;
+      bottom: 40px;
+      z-index: 1;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
