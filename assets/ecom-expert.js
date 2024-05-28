@@ -71,7 +71,7 @@ document.querySelectorAll('.product-grid-form').forEach(function(form) {
           form.querySelector('.form-footer').appendChild(alertDiv);
           return false;
         }
-
+        form.submit();
         return true;
       });
     });
