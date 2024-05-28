@@ -35,3 +35,15 @@ function togglerLight(id, cls, $this) {
   }
 }
 
+var forms; 
+forms = document.querySelectorAll('.product-grid-form');
+if (forms.length > 0) {
+  forms.forEach(function(form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      return false;
+    });
+  });
+}
+
+
