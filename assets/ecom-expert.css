@@ -438,6 +438,10 @@ font-weight: 400;
     padding-right: 3px;
     margin-bottom: 6px !important;
   }
+  .section-title{
+    font-size: 24px;
+    text-align: center;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
