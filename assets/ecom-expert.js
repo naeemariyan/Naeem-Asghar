@@ -44,7 +44,7 @@ document.querySelectorAll('.product-grid-form').forEach(function(form) {
         }
 
         var alertBox = '';
-
+        form.querySelector('.alertbox-error').remove();
         form.querySelectorAll('[data-required]').forEach(function(field) {
           if (field.getAttribute('type') === 'radio') {
             var radios = form.querySelectorAll(`input[type="radio"][name="${field.name}"]`);
