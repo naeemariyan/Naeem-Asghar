@@ -10,7 +10,7 @@ function update_selected_variants(p_id){
   selectedOptions = Array.from(productSelections).map((select)=> select.value);
   checkedOptions = Array.from(productCheckboxs).map((select)=> select.value);
 
-  selectedItems = checkedOptions.concat(selectedOptions);
+  selectedItems = selectedOptions.concat(checkedOptions);
   matchedVariant = template.variants.find(variant => {
     return variant.options.every((option, index)=> option === selectedItems[index]);
   })
