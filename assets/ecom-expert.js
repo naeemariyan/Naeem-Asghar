@@ -38,21 +38,18 @@ function togglerLight(id, cls, $this) {
 document.querySelectorAll('.product-grid-form').forEach(function(form) {
       form.addEventListener('submit', function(event) {
         event.preventDefault();
-
-        // Clear any previous alert messages
-        const previousAlertBox = form.querySelector('.alertbox-error');
+        var previousAlertBox = form.querySelector('.alertbox-error');
         if (previousAlertBox) {
           previousAlertBox.remove();
         }
 
-        let alertBox = '';
+        var alertBox = '';
 
         form.querySelectorAll('[data-required]').forEach(function(field) {
           if (field.getAttribute('type') === 'radio') {
-            // Get all radio buttons with the same name
-            const radios = form.querySelectorAll(`input[type="radio"][name="${field.name}"]`);
-            const isChecked = Array.from(radios).some(radio => radio.checked);
-            if (!isChecked) {
+            var radios = form.querySelectorAll(`input[type="radio"][name="${field.name}"]`);
+            var isChecked = Array.from(radios).some(radio => radio.checked);
+            if (!isChecked && alertBox.includes(field.getAttribute('data-required')) == false) {
               alertBox += `<span>Please select a ${field.getAttribute('data-required')}.</span><br>`;
             }
           } else if (field.tagName.toLowerCase() === 'select') {
@@ -65,7 +62,7 @@ document.querySelectorAll('.product-grid-form').forEach(function(form) {
         });
 
         if (alertBox) {
-          const alertDiv = document.createElement('div');
+          var alertDiv = document.createElement('div');
           alertDiv.className = 'alertbox-error';
           alertDiv.innerHTML = alertBox;
           form.querySelector('.form-footer').appendChild(alertDiv);
