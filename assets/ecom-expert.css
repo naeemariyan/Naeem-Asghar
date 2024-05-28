@@ -405,7 +405,16 @@ width: 100%;
 .text-baner-wrappper .innerbox-w-fix .btn{
   margin-top:49px;
 }
-
+.alertbox-error{
+    display: block;
+    width: 100%;
+    color: #e42828;
+    font-weight: 400;
+    padding: 10px 10px;
+    border: 1px solid #e42828;
+    margin-top: 10px;
+    line-height: 17px;
+}
 
 
 /****** Responsive css ******/
