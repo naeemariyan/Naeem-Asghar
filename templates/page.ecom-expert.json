@@ -14,7 +14,8 @@
             "bg_color": "#f5f5f5",
             "text_color": "",
             "accordion": true,
-            "visiblity_control": "show-image"
+            "visiblity_control": "show-image",
+            "css_class": ""
           }
         },
         "large_image_tHNfGf": {
@@ -53,7 +54,8 @@
             "bg_color": "#f5f5f5",
             "text_color": "",
             "accordion": false,
-            "visiblity_control": "show-image"
+            "visiblity_control": "show-image",
+            "css_class": "font-sm-14"
           }
         }
       },
