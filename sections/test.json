@@ -11,8 +11,13 @@
   "type": "header",
   "name": "Group name",
   "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+      }
+    }
   },
   "order": [
-
+    "footer"
   ]
 }
