@@ -8,7 +8,7 @@
 * ------------------------------------------------------------
 */
 {
-  "type": "header",
+  "type": "aside",
   "name": "Group name",
   "sections": {
     "footer": {
